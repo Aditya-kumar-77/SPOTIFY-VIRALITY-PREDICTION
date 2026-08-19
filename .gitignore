@@ -1,24 +1,106 @@
-# Environment
+# ===============================
+# Environment / Secrets
+# ===============================
 .env
 .env.*
+backend/.env
+frontend/.env
+ml_service/.env
 
-# Node
+# ================================
+# Node.js
+# ================================
 node_modules/
-.vite/
-dist/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
+# ================================
+# Frontend / Vite
+# ================================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ================================
+# Backend
+# ================================
+backend/node_modules/
+
+# ================================
 # Python
+# ================================
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ================================
+# ML / Python tools
+# ================================
 .ipynb_checkpoints/
 
-# ML logs
+# ================================
+# CatBoost
+# ================================
 catboost_info/
+**/catboost_info/
 
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
+# ================================
+# IDE / Editors
+# ================================
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# ================================
+# OS generated files
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# Logs
+# ================================
+*.log
+
+# ================================
+# Temporary files
+# ================================
+*.tmp
+*.temp
+*.bak
+
+# ================================
+# Build / Cache
+# ================================
+.cache/
+.parcel-cache/
+
+# ================================
+# Python distribution
+# ================================
+*.egg-info/
+dist/
+build/
+
+# ================================
+# Jupyter / ML generated files
+# ================================
+*.pickle
+*.pkl
+
+# ================================
+# Local database files
+# ================================
+*.db
+*.sqlite
+*.sqlite3
